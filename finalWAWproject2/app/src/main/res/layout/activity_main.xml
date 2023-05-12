@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="321dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="22dp"
+        android:text="@string/header"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.566"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/ChkBoat1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ChkBoat1"
+        app:layout_constraintBottom_toTopOf="@+id/imageBoat3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.224"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageBoat1" />
+
+    <CheckBox
+        android:id="@+id/ChkBoat2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="124dp"
+        android:layout_marginEnd="67dp"
+        android:text="@string/ChkBoat2"
+        app:layout_constraintBottom_toTopOf="@+id/imageBoat4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ChkBoat1"
+        app:layout_constraintTop_toBottomOf="@+id/imageBoat2" />
+
+    <CheckBox
+        android:id="@+id/ChkBoat3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/ChkBoat3"
+        app:layout_constraintBottom_toTopOf="@+id/imageBoat5"
+        app:layout_constraintEnd_toStartOf="@+id/ChkBoat4"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageBoat3"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <CheckBox
+        android:id="@+id/ChkBoat4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ChkBoat4"
+        app:layout_constraintBottom_toTopOf="@+id/imageBoat6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.802"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageBoat4" />
+
+    <CheckBox
+        android:id="@+id/ChkBoat5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/ChkBoat5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/ChkBoat6"
+        app:layout_constraintHorizontal_bias="0.031"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageBoat5" />
+
+    <CheckBox
+        android:id="@+id/ChkBoat6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/ChkBoat6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.802"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageBoat6"
+        app:layout_constraintVertical_bias="0.714" />
+
+    <Button
+        android:id="@+id/NextBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="4dp"
+        android:text="@string/NextBtn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/ChkBoat6"
+        app:layout_constraintStart_toEndOf="@+id/ChkBoat5" />
+
+    <ImageView
+        android:id="@+id/imageBoat1"
+        android:layout_width="106dp"
+        android:layout_height="133dp"
+        android:layout_marginBottom="48dp"
+        android:contentDescription="@string/boat1"
+        app:layout_constraintBottom_toTopOf="@+id/imageBoat3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.209"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/boat1" />
+
+    <ImageView
+        android:id="@+id/imageBoat2"
+        android:layout_width="109dp"
+        android:layout_height="128dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="53dp"
+        android:contentDescription="@string/boat2"
+        app:layout_constraintBottom_toTopOf="@+id/imageBoat4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.906"
+        app:layout_constraintStart_toEndOf="@+id/imageBoat1"
+        app:layout_constraintTop_toBottomOf="@+id/header"
+        app:srcCompat="@drawable/boat2" />
+
+    <ImageView
+        android:id="@+id/imageBoat3"
+        android:layout_width="125dp"
+        android:layout_height="127dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="182dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="41dp"
+        android:contentDescription="@string/boat3"
+        app:layout_constraintBottom_toTopOf="@+id/imageBoat5"
+        app:layout_constraintEnd_toStartOf="@+id/imageBoat4"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/boat3" />
+
+    <ImageView
+        android:id="@+id/imageBoat4"
+        android:layout_width="134dp"
+        android:layout_height="128dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginBottom="52dp"
+        android:contentDescription="@string/boat4"
+        app:layout_constraintBottom_toTopOf="@+id/imageBoat6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.855"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header"
+        app:srcCompat="@drawable/boat44" />
+
+    <ImageView
+        android:id="@+id/imageBoat5"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="360dp"
+        android:layout_marginEnd="43dp"
+        android:contentDescription="@string/boat5"
+        app:layout_constraintEnd_toStartOf="@+id/imageBoat6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header"
+        app:srcCompat="@drawable/boat5" />
+
+    <ImageView
+        android:id="@+id/imageBoat6"
+        android:layout_width="140dp"
+        android:layout_height="117dp"
+        android:layout_marginBottom="76dp"
+        android:contentDescription="@string/boat6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.874"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/boat6" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
