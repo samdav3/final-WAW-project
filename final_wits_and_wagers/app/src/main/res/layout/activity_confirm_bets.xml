@@ -70,13 +70,18 @@
         app:layout_constraintStart_toEndOf="@+id/BckBtn"
         app:srcCompat="@drawable/regatta_g6472da47b_1920" />
 
-    <MultiAutoCompleteTextView
+    <EditText
         android:id="@+id/results"
-        android:layout_width="231dp"
-        android:layout_height="152dp"
-        android:layout_marginBottom="320dp"
+        android:layout_width="253dp"
+        android:layout_height="159dp"
+        android:layout_marginTop="9dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BetsID"
+        app:layout_constraintVertical_bias="0.012" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
